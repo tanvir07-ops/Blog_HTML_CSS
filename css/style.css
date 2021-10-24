@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border: 5px solid #d92c7b;
+}
+
+h1,
+h2,
+h3 {
+  color: white;
+}
+
+h2,
+h3 {
+  margin-bottom: 20px;
+  margin-top: 30px;
+  color: #1089ad;
+}
+
+.main-header {
+  background-color: #d92c7b;
+  padding-top: 20px;
+
+  text-align: center;
+}
+
+.main-header nav {
+  padding: 20px;
+  width: 100%;
+}
+
+.main-header nav a:link {
+  color: #444;
+  margin: 20px;
+  margin-top: 20px;
+  display: inline-block;
+
+  /* amra jani a holo inline element and tai a te margin-top and margin-bottom and padding-top and padding-bottom kaaj korbe nah eigula kaaj korate chaile amader ke a er display : inline-block dite hobe er fole a tag ti inline and block 2 tir motoi kaaj korbe */
+}
+
+article .secondary-text {
+  color: #1098ad;
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+
+article .python-img {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+li {
+  color: #444;
+}
+
+h1 {
+  font-size: 26px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+p {
+  font-size: 22px;
+  line-height: 1.5;
+  margin-top: 20px;
+}
+
+li {
+  font-size: 20px;
+  margin: 20px;
+}
+
+article header p strong {
+  font-style: italic;
+}
+
+#copyright {
+  font-size: 16px;
+  text-align: center;
+}
+
+.related-ul {
+  list-style-type: none;
+}
+
+#author {
+  font-size: 20px;
+}
+
+.related-author {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1089ad;
+  width: 50%;
+
+  margin-top: 20px;
+}
+
+aside h4 {
+  color: #a01877;
+}
+
+li:first-child {
+  color: #a01877;
+}
+
+a:link {
+  color: #444;
+  text-decoration: none;
+}
+a:visited {
+  color: #444;
+}
+
+a:hover {
+  text-decoration: underline #1098ad;
+  color: firebrick;
+}
+
+button {
+  font-size: 22px;
+  padding: 20px;
+
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  cursor: pointer;
+}
+
+/* pseudo elements: */
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+
+  /* pseudo elements ke (::) ei sign diye define kora hoy and pseudo elements holo inline element */
+}
+
+h3 + p::first-letter {
+  /* eikhane (+) er means holo adjacent sibling:
+  
+  jemon article parent er under e h3 soho sokol p holo siblings*/
+  font-size: 50px;
+  color: #a01877;
+}
+
+/* ekhon ami chaitesi html er h2 tag er pore jate ekti top likha dekha jay tar jonne o pseudo element use korbo: */
+
+h2 {
+  position: relative;
+}
+
+h2::after {
+  content: "TOP";
+
+  background-color: #d39e00;
+  color: white;
+  font-size: 16px;
+
+  display: inline-block;
+  padding: 5px 10px;
+  text-align: center;
+
+  position: absolute;
+  top: -10px;
+  right: -25px;
+}
