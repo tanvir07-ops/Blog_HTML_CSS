@@ -5,7 +5,7 @@
 }
 
 .container {
-  width: 800px;
+  width: 1200px;
   margin: 0 auto;
   position: relative;
 }
@@ -30,20 +30,10 @@ h3 {
 
 .main-header {
   background-color: #d92c7b;
-  padding-top: 20px;
-
-  text-align: center;
-}
-
-.main-header nav {
-  padding: 20px;
-  width: 100%;
 }
 
 .main-header nav a:link {
   color: #444;
-  margin: 20px;
-  margin-top: 20px;
   display: inline-block;
 
   /* amra jani a holo inline element and tai a te margin-top and margin-bottom and padding-top and padding-bottom kaaj korbe nah eigula kaaj korate chaile amader ke a er display : inline-block dite hobe er fole a tag ti inline and block 2 tir motoi kaaj korbe */
@@ -124,8 +114,7 @@ aside {
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1089ad;
   width: 50%;
-
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 aside h4 {
@@ -136,17 +125,33 @@ li:first-child {
   color: #a01877;
 }
 
-a:link {
-  color: #444;
+nav a:link {
+  color: #0e0b2b;
   text-decoration: none;
+  background-color: #0e0b2b;
+  color: white;
+  /* padding-right: 25px;
+  padding-top: 5px;
+  padding-bottom: 5px; */
+  border-radius: 25%;
+  padding: 1rem;
+  margin: 1rem;
+  padding-right: 1.5rem;
+
+  text-align: center;
 }
+
+nav a:hover {
+  background-color: #a01877;
+}
+
 a:visited {
-  color: #444;
+  color: #0e0b2b;
 }
 
 a:hover {
-  text-decoration: underline #1098ad;
-  color: firebrick;
+  text-decoration: none;
+  color: #0e0b2b;
 }
 
 button {
@@ -195,4 +200,70 @@ h2::after {
   position: absolute;
   top: -10px;
   right: -25px;
+}
+
+/* using float: */
+
+.author {
+  float: left;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.author-img {
+  float: left;
+}
+
+h1 {
+  float: left;
+
+  padding: 20px;
+}
+
+nav {
+  float: right;
+}
+
+nav a:link {
+  padding-left: 20px;
+  color: #0e0b2b;
+}
+
+nav a:link:last-child {
+  padding-right: 20px;
+}
+
+/* for float clear(alltime eti use korte hobe float use korle ) */
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+
+  /* diplay block nah dile hobe nah karon float alltime kaaj kore block element er belay jodi kono inline-block or inline er jonneo o float clear kora laage tahole take age display:block e convert kore nite hobe */
+}
+
+aside {
+  float: right;
+  /* position: absolute; */
+  top: 250px;
+  right: 0px;
+  width: 300px;
+}
+
+article {
+  float: left;
+  /* position: relative; */
+
+  width: 825px;
+
+  /* amra container er width diyechi 1200px er jonne ami article er width:825 rekechi and aside er width:300px rekechi er fole 300+825 = 1125 hoy and baki 75px rekechi ami article and aside er moddeh faka rakhar jonne: */
+}
+
+footer p {
+  /* eikhane e footer e clear:both deaar means holo amra jani float ti around kore pura element er moddeh er fole footer er moddeo float ti around kore er postion change kore feleche er jonne jate footer er position thik thake tar jonne clear:both diye er float remove kore dilam */
+  clear: both;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #a01877;
 }
