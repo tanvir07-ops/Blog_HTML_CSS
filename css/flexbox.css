@@ -1,0 +1,70 @@
+.main-header {
+  display: flex;
+  /* for centering y-axis: */
+  align-items: center;
+
+  /* for spacing in x-axis between h1 and link: */
+
+  justify-content: space-between;
+}
+
+.main-header h1 {
+  padding-left: 30px;
+}
+
+/* for author image and author post date using float: */
+
+.author-flex {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.author {
+  margin: 0;
+}
+
+/* for aside: */
+
+.related-flex {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.related-url {
+  font-size: 18px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a.related-url {
+  color: #1089ad;
+  font-weight: bolder;
+}
+
+.related-author {
+  position: relative;
+  top: 60px;
+  right: 120px;
+  color: #a01877;
+  font-size: 14px;
+}
+
+/* for article and aside flex: */
+.article-aside-flex {
+  display: flex;
+  gap: 100px;
+}
+
+aside {
+  align-self: flex-start;
+
+  /* eikhane article flex-item tir height and width boro tai aside tio by-default align-items:stretch hoye chilo tai aside er moodeh thik article jototuku jaygah occupy korese totutukui abar aside o korechilo tai er align-self:flex: -start kore diyechi jate aside er jototuku jaygah dorkar tototukui jate dokhol kore:; */
+
+  padding-bottom: 50px;
+}
+
+.related-li {
+  padding-bottom: 50px;
+}
