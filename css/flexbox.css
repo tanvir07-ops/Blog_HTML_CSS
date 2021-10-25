@@ -54,7 +54,16 @@ a.related-url {
 /* for article and aside flex: */
 .article-aside-flex {
   display: flex;
-  gap: 100px;
+  gap: 80px;
+}
+
+article {
+  flex: 1;
+
+  /* flex 1 er means hocceh article and aside 2 tay same jaygah nibe */
+}
+aside {
+  flex: 1;
 }
 
 aside {

@@ -109,9 +109,9 @@ article header p strong {
   font-style: italic;
 }
 
-.related-author::after {
+/* .related-author::after {
   content: " ---";
-}
+} */
 
 .related-author::before {
   content: "--- ";
